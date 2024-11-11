@@ -1,0 +1,16 @@
+.titles{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    color: var(--white-secundary);
+    gap: 50px;
+    font-size: 14px;
+}
+
+@media (min-width: 320px)  and (max-width: 480px){
+    .titles {
+        gap: 20px;
+    }
+}

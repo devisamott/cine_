@@ -1,0 +1,25 @@
+.dropdownButton {
+    background-color: #1C1C1C;
+    color: var(--white-main);
+    border: none;
+    width: var(--width-containers-sidebar);
+    height: 46px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dropdownButton::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    width: calc(100% - 20px); 
+    height: 2px;
+    background-color: var(--white-main); 
+}

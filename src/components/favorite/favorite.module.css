@@ -1,0 +1,20 @@
+.favorite {
+    display: flex;
+    position: absolute;
+    right: 160px;
+    bottom: 80px;
+    cursor: pointer;
+}
+@media (min-width: 320px)  and (max-width: 480px){
+    .favorite {
+        bottom: 160px;
+        right: 40px;
+        cursor: pointer;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .favorite {
+        right: 130px;
+        cursor: pointer;
+    }
+}

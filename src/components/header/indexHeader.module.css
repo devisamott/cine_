@@ -1,0 +1,33 @@
+.indexHeader{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;;
+    font-weight: 700;
+    font-style: normal;
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    align-items: center;
+}
+.logoTitlesContainer {
+    gap: 80px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 320px)  and (max-width: 480px){
+   .indexHeader{
+        overflow-x: hidden;
+        display: flex;
+        align-items: center;
+   }
+   .logo {
+        width: 10px;
+   }
+   .logoTitlesContainer {
+        gap: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+}

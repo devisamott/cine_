@@ -1,0 +1,56 @@
+.ratingCircle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    right: 40px;
+    bottom: 60px;
+}
+.progressCircle {
+    --progress-color: #14ca17; 
+    --background-color: #226b24; 
+    --circle-bg: transparent; 
+    --progress: 0%;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--circle-bg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.progressCircle::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--progress-color) var(--progress),
+        var(--background-color) 0
+    );
+    mask: radial-gradient(farthest-side, transparent calc(100% - 6px), black);
+}
+.ratingText {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+@media (min-width: 320px)  and (max-width: 480px){
+    .ratingCircle {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        right: 20px;
+        bottom: 60px;
+    }
+}
